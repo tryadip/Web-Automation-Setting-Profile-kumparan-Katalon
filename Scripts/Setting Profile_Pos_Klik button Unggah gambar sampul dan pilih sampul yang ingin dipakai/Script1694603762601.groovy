@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Button/btn_Ubah_Profile'))
 
 
 CustomKeywords.'com.katalon.upload.uploadFile'(findTestObject('Button/btn_Unggah_Sampul'), 'C:/Users/user/Pictures/Figma/advan/banner1.png')
-//WebUI.scrollToElement(findTestObject("Button/btn_Ubah_Profile"),2)
+WebUI.scrollToElement(findTestObject("Button/btn_Ubah_Profile"),2)
 //WebUI.click(findTestObject("Button/btn_Unggah_Sampul"))
 //WebUI.uploadFile(findTestObject('Button/btn_Unggah_Sampul'), 'C:\\Users\\user\\Pictures\\Figma\\advan\\banner1.jpg')
 //WebUI.getAttribute(findTestObject("Button/btn_Unggah_Sampul"), 'C:/Users/user/Pictures/Figma/advan/banner1.png')
