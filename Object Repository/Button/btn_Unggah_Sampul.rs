@@ -4,14 +4,18 @@
    <name>btn_Unggah_Sampul</name>
    <tag></tag>
    <elementGuidId>1f6c9398-317b-45a8-ab04-431944defe95</elementGuidId>
+   <imagePath>C:\Users\user\Pictures\Figma\advan\banner1.png</imagePath>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[3]/div/div/div[3]/div/div[2]/div/div/div[1]/div/div[2]/div/button</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[3]/div/div/div[3]/div/div[2]/div/div/div[1]/div/div[2]/div/button/div/div/span</value>
+         <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>C:\Users\user\Pictures\Figma\advan\banner1.png</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

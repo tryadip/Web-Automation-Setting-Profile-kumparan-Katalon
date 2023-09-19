@@ -13,16 +13,16 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.builtin.UploadFileKeyword as UploadFileKeyword
+import com.kms.katalon.core.webui.keyword.builtin.VerifyElementCheckedKeyword
+import com.kms.katalon.core.webui.keyword.builtin.VerifyElementClickableKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.thoughtworks.selenium.webdriven.commands.GetAttribute as GetAttribute
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.remote.server.commandhandler.UploadFile as Keys
 
 String username = GlobalVariable.username
-
 String pass = GlobalVariable.pass
+String pp = GlobalVariable.fotoprofile
+String bannerfoto = GlobalVariable.banner
 
 WebUI.openBrowser('kumparan.com')
 
@@ -42,6 +42,13 @@ WebUI.click(findTestObject('Button/btn_Halaman_Profile'))
 
 WebUI.click(findTestObject('Button/btn_Ubah_Profile'))
 
-WebUI.uploadFile(findTestObject("TxtField/file_input"), file)
+WebUI.uploadFile(findTestObject("TxtField/file_input"), bannerfoto)
 
+WebUI.scrollToPosition(0, 300)
 
+WebUI.uploadFile(findTestObject("TxtField/input_PP"), pp)
+WebUI.scrollToElement(findTestObject("Button/btn_Save"), 0)
+WebUI.delay(2)
+WebUI.setText(findTestObject("TxtField/field_medsos"),"kumparan.com")
+WebUI.setText(findTestObject("TxtField/field_tgl_lahir"),"11/14/1997")
+WebUI.click(findTestObject("Button/btn_male"))
